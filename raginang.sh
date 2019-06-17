@@ -60,6 +60,7 @@ then
        clear
        read -p "Masukan Web Target Sql ==> " target
        sleep 2
+       git clone https://github.com/sqlmapproject/sqlmap
        cd sqlmap
        python2 sqlmap.py -u $target --dbs
 elif [ $wanjay = "3"] || [ $wanjay = "3" ]
